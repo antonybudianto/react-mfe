@@ -1,0 +1,24 @@
+{
+  "headers": [
+    {
+      "source": "**/*.@(html|css|js|jpg|jpeg|gif|png)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "**/*.@(js)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    }
+  ],
+  "proxy": [],
+  "public": "./dist"
+}
