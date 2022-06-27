@@ -3,7 +3,14 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 module.exports = {
   mode: "production",
-
+  optimization: {
+    runtimeChunk: "single",
+    moduleIds: "deterministic",
+  },
+  output: {
+    filename: "[name].[contenthash].js",
+    chunkFilename: "[name].[contenthash].js",
+  },
   plugins: [
     new ModuleFederationPlugin({
       name: "MFE2",

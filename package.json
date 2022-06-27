@@ -1,0 +1,28 @@
+{
+  "name": "react-mfe",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "Demo React micro-frontend with Webpack 5 Module Federation",
+  "scripts": {
+    "bs": "npm run bootstrap",
+    "bootstrap": "pnpm recursive install",
+    "clean": "pnpm -r exec rm -rf ./dist --filter mfe*",
+    "dev": "pnpm run dev --filter mfe* --stream",
+    "build": "pnpm run build --filter mfe*",
+    "serve": "pnpm run serve --filter mfe* --stream",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonybudianto/react-mfe.git"
+  },
+  "keywords": [],
+  "author": "Antony",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6.4.0",
+    "pnpm": ">=6.23.2"
+  },
+  "homepage": "https://github.com/antonybudianto/react-mfe#readme"
+}
