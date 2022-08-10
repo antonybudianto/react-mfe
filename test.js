@@ -1,1 +1,1 @@
-  const extractScript = /<script[^<]*<\/script>/gi.exec(html); //a
+  const extractScript = /<script[^<]*<\/script>/gi.exec(html); //b
